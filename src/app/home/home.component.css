@@ -1,0 +1,29 @@
+
+.home {
+    background-color: #d8d8d8; /* Colore di sfondo del contenitore */
+    padding: 20px; /* Spazio interno */
+    border: 1px solid #ccc; /* Bordo per visibilità */
+    border-radius: 5px; /* Bordi arrotondati */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra */
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+.foto-home-1 {
+    width: 100%;
+}
+
+
+.foto-home {
+    display: flex;
+    max-width: 2000px;
+    min-width: 800px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -1,0 +1,32 @@
+.footer-toolbar {
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1em;
+    color: white;
+    font-size: 12px;
+    box-sizing: border-box;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    color: #575757;
+  }
+
+  a:active {
+    color: #777; /* Colore del link quando è cliccato */
+  }
+  
+  
+  a:visited {
+    color: white; /* Colore del link dopo che è stato visitato */
+  }

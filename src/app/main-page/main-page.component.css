@@ -1,0 +1,27 @@
+.main-toolbar {
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+  
+  .main-toolbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    
+  }
+  
+  .main-toolbar a:hover {
+    background-color: #575757;
+  }
+
+  .mat-toolbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1em;
+    color: white;
+    font-size: 20px;;
+  }
+  

@@ -1,0 +1,65 @@
+<app-main-page></app-main-page>
+
+
+<body>
+  <h2>Contactanos</h2>
+  <div class="container-form">
+    <form class="contact-form">
+      <table class="contact-full-width" cellspacing="0"><tr>
+        <td><mat-form-field class="contact-full-width">
+        <mat-label>Nombre</mat-label>
+          <input matInput>
+            </mat-form-field></td>
+          <td><mat-form-field class="contact-full-width">
+        <mat-label>Apellido</mat-label>
+      <input matInput>
+    </mat-form-field></td>
+  </tr></table>
+
+  <table class="contact-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="contact-full-width">
+    <mat-label>Elige el Servicio</mat-label>
+    <mat-select>
+      <mat-option value="Matrimonio">Boda</mat-option>
+      <mat-option value="Battesimo">Bautismo</mat-option>
+      <mat-option value="Cresima">Comunión</mat-option>
+      <mat-option value="Book Personale">Book Personal</mat-option>
+      <mat-option value="altro">Otro</mat-option>
+    </mat-select>
+  </mat-form-field></td>
+
+    <td><mat-form-field class="contact-full-width">
+    <mat-label>Elige La Fecha</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field></td>
+  </tr></table>
+
+  <mat-form-field class="contact-full-width">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. example@example.com">
+    @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+      <mat-error>Please enter a valid email address</mat-error>
+    }
+    @if (emailFormControl.hasError('required')) {
+      <mat-error>Email is <strong>required</strong></mat-error>
+    }
+  </mat-form-field> 
+
+  <mat-form-field class="contact-full-width">
+    <mat-label>Deje su comentario</mat-label>
+    <textarea matInput [formControl]="textAreaFormControl" placeholder="Ex. ¿Con cuánta antelación tengo que reservaros?"></textarea>
+    @if (textAreaFormControl.hasError('') && !textAreaFormControl.hasError('required')) {
+      <mat-error>Please enter a valid text</mat-error>
+    }
+    @if (textAreaFormControl.hasError('required')) {
+      <mat-error>Text is <strong>required</strong></mat-error>
+    }
+  </mat-form-field>
+  <br>
+  <div class="button-form"><button class="button-submit" mat-stroked-button  type="submit">ENVIAR</button></div>
+    </form>
+  </div>
+</body>

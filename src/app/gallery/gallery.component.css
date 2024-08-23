@@ -1,0 +1,33 @@
+.portfolio-container {
+   position: absolute;
+   padding-top: 80px;
+   padding-bottom: 80px;
+    background-color: #f0f0f0; /* Colore di sfondo della sezione portfolio */
+    z-index: -1000;
+  }
+  
+  .portfolio-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    max-width: 1600px; /* Larghezza massima della griglia */
+  }
+  
+  
+  
+  
+  mat-card img {
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+    object-fit: cover;
+    
+  }
+  
+  
+  

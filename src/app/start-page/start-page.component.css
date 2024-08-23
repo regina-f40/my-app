@@ -1,0 +1,61 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    cursor: pointer;
+  }
+  
+  .logoIniziale {
+    width: 200px;
+  }
+
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(1);
+     
+      }
+     
+    60% {
+        transform: scale(1.3);
+        
+      }
+      
+    100% {
+        transform: scale(1);
+      }
+}
+
+.logoIniziale {
+    
+    animation-name: bounceIn;
+    animation-duration: 0.85s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    
+}
+
+.logoIniziale:hover {
+    animation-play-state: paused;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+}
+.container img {
+    width: 150px;
+    height: auto;
+    
+}
+ h3 {
+    text-align: center;
+    font-size: 24px;
+ }

@@ -1,0 +1,53 @@
+.contact-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+   
+  }
+  
+  .contact-full-width {
+    height: auto;
+    width: 100%;
+    padding: 20;
+    
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+
+  .container-form {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    margin-top: 80px;
+  }
+   
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto
+   }
+ 
+  
+  form {
+    width: 300px; /* Imposta una larghezza fissa per il form */
+    padding: 20px; /* Aggiungi spazio interno al form */
+    border: 1px solid #ccc; /* Aggiungi un bordo per visibilità */
+    border-radius: 5px; /* Arrotonda i bordi */
+    background-color: #f9f9f9; /* Aggiungi un colore di sfondo */
+  }
+
+  .button-submit {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    font-size: medium;
+    font-weight: 400;
+    
+  }
+
+  .button-form {
+    display: flex;
+    justify-content: center;
+  }
